@@ -1,0 +1,40 @@
+{
+  "name": "dsh-xhs-ops",
+  "version": "0.3.0",
+  "private": true,
+  "description": "小红书运营工作台：调研笔记、创作笔记、合规自检、发布草稿、数据复盘、评论排名、评论回复策略（五类模板+人设+合规自检+一键复制）、评论混动（真人感节奏+舆论监测分级）、多账号矩阵，含账号 Cookie 登录桥接。",
+  "type": "module",
+  "exports": {
+    ".": "./dsh/index.js",
+    "./client": "./dsh/client.js",
+    "./package.json": "./package.json",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": [
+    "dsh",
+    "locale/*.json",
+    "icon.svg",
+    "cordis.patch.yml",
+    "README.md"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": []
+    }
+  },
+  "keywords": [
+    "dsh",
+    "deepseek-harness",
+    "xiaohongshu",
+    "rednote",
+    "operations",
+    "compliance"
+  ],
+  "license": "MIT"
+}
