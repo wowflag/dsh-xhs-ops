@@ -1,0 +1,4 @@
+# dsh bundle layer: mount the Xiaohongshu operations workbench.
+- insert:
+    - id: dsh-xhs-ops
+      name: 'dsh-xhs-ops'
